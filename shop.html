@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="az">
+  <!-- Begin Head -->
+  <head>
+    <title>Azmall Az</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Bicycle Shop; Sizə uyğun məhsulu tapın; Onlayn alış-veriş mağazası; Tək şəxsiyyət vəsiqəsi ilə kredit"
+    />
+    <meta name="keywords" content="Azmall Az, Velosiped, Uşaq arabası, Yolka" />
+    <meta name="author" content="Muzaffar Mustafayev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-family  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <!------------- Loader start ----------->
+    <div class="cyc-loader">
+      <div class="cyc-spin">
+        <img src="assets/images/loader.gif" alt="loader" />
+      </div>
+    </div>
+    <!------------- Loader End ----------->
+    <!------------- Header Section start ----------->
+    <div class="cyc-menu-wrapper">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-4 col-sm-6 col-8">
+            <div class="cyc-menu-logo">
+              <a href="index.html"><img src="assets/images/Logo.png" /></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-6 col-4">
+            <div class="cyc-navmenu-wrapper">
+              <div class="cyc-navmenu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="active"><a href="shop.html">Shop</a></li>
+                  <li class="cyc-has-menu">
+                    <a href="javascript:void(0)"
+                      >Pages
+                      <svg
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 491.996 491.996"
+                        style="enable-background: new 0 0 512 512"
+                      >
+                        <g>
+                          <path
+                            d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                            opacity="1"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                    <ul class="cyc-submenu">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                      <li><a href="shop-single.html">Shop Single</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="cyc-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="cyc-cart-icon">
+                <a href="javascript:void(0);">
+                  <span>
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="cyc-cart-details">
+                  <li class="cyc-cartdetail-sec">
+                    <div class="cyc-cartdetail-img">
+                      <a href="cart.html"
+                        ><img src="assets/images/single-pro1.png" alt="img"
+                      /></a>
+                    </div>
+                    <div class="cyc-cartdetail-text">
+                      <h3><a href="cart.html">Cyclocross Bike</a></h3>
+                      <p>$60</p>
+                    </div>
+                    <a href="javascript:void(0);" class="cart-close">×</a>
+                  </li>
+                  <li class="cyc-cartdetail-sec">
+                    <div class="cyc-cartdetail-img">
+                      <a href="cart.html"
+                        ><img src="assets/images/single-pro1.png" alt="img"
+                      /></a>
+                    </div>
+                    <div class="cyc-cartdetail-text">
+                      <h3><a href="cart.html">Cyclocross Bike</a></h3>
+                      <p>$60</p>
+                    </div>
+                    <a href="javascript:void(0);" class="cart-close">×</a>
+                  </li>
+                  <li>
+                    <div class="cyc-carttotal">
+                      <h4>Total <span>$120</span></h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cyc-cartbtn">
+                      <a href="cart.html" class="cyc-btn">View Cart</a>
+                      <a href="checkout.html" class="cyc-btn">Checkout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cyc-admin-icon">
+                <a href="profile.html">
+                  <span>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8033 9.36054C11.9864 8.572 11.0141 7.98824 9.95329 7.63487C11.0895 6.87945 11.8359 5.61519 11.8359 4.18563C11.8359 1.87768 9.89083 0 7.5 0C5.10917 0 3.16406 1.87768 3.16406 4.18563C3.16406 5.61519 3.91052 6.87945 5.04674 7.63487C3.9859 7.98824 3.01359 8.572 2.19671 9.36054C0.780147 10.728 0 12.5461 0 14.48H1.17188C1.17188 11.1116 4.01065 8.37126 7.5 8.37126C10.9893 8.37126 13.8281 11.1116 13.8281 14.48H15C15 12.5461 14.2199 10.728 12.8033 9.36054ZM7.5 7.24001C5.75534 7.24001 4.33594 5.86983 4.33594 4.18563C4.33594 2.50142 5.75534 1.13125 7.5 1.13125C9.24466 1.13125 10.6641 2.50142 10.6641 4.18563C10.6641 5.86983 9.24466 7.24001 7.5 7.24001Z"
+                        fill="#222222"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Header Section End ----------->
+    <!------------- Breadcrumb Section start ----------->
+    <div class="cyc-bread-section">
+      <div class="cyc-breadcrumb-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="cyc-bread-content">
+                <div class="cyc-bread-list">
+                  <span>
+                    <a href="index.html">Home</a>
+                  </span>
+                  <span class="cyc-active-page">Shop</span>
+                </div>
+                <h2>Shop</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Breadcrumb Section end ----------->
+    <!------------- Shop Section Start ----------->
+    <div class="cyc-bgcover cyc-shop-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="cyc-shop-search">
+              <div class="cyc-form-input">
+                <span>
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.99528 0.00377948C6.61081 0.00777692 4.32515 0.956774 2.63907 2.64285C0.952995 4.32893 0.00399744 6.61459 0 8.99905C0.00199286 11.3855 0.949866 13.6739 2.63594 15.3628C4.32202 17.0517 6.60881 18.0034 8.99528 18.0094C11.1118 18.0094 13.062 17.2649 14.6041 16.0328L18.3496 19.7783C18.5394 19.9547 18.7901 20.0507 19.0492 20.0462C19.3082 20.0417 19.5554 19.9369 19.7389 19.7539C19.9223 19.571 20.0278 19.324 20.033 19.065C20.0382 18.8059 19.9429 18.5549 19.7669 18.3647L16.0214 14.6154C17.3006 13.0245 17.998 11.0443 17.9981 9.00283C17.9981 4.04409 13.954 0.00377948 8.99528 0.00377948ZM8.99528 2.00693C12.8731 2.00693 15.995 5.12504 15.995 8.99905C15.995 12.8731 12.8731 16.0101 8.99528 16.0101C5.11748 16.0101 1.99937 12.8844 1.99937 9.00661C1.99937 5.12882 5.11748 2.00693 8.99528 2.00693Z"
+                      fill="#797979"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  class="form-control require"
+                  name="search"
+                  id="search"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+            <div class="cyc-widgets cyc-categories">
+              <h3>Categories</h3>
+              <ul>
+                <li>
+                  <a href="javascript:void(0);"
+                    >All <span class="cyc-catnum">(1457)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >Road Bicycles (245)
+                    <span class="cyc-catnum">(245)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    Flat Bar Road Bikes (346)
+                    <span class="cyc-catnum">(346)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >Touring Bicycles (604)
+                    <span class="cyc-catnum">(604)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >Hybrid Bicycles (338)
+                    <span class="cyc-catnum">(338)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    Cross Bikes (130) <span class="cyc-catnum">(1457)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >Freight Bicycles (372)
+                    <span class="cyc-catnum">(372)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >Helmet (742) <span class="cyc-catnum">(742)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >Bike Bag (810) <span class="cyc-catnum">(810)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="cyc-widgets cyc-categories">
+              <h3>Price</h3>
+              <div class="cyc-range-slider">
+                <div class="cyc-range-slider">
+                  <span class="full-range"></span>
+                  <span class="incl-range"></span>
+                  <input
+                    name="rangeOne"
+                    value="0"
+                    min="0"
+                    max="300"
+                    step="1"
+                    type="range"
+                  />
+                  <input
+                    name="rangeTwo"
+                    value="180"
+                    min="0"
+                    max="300"
+                    step="1"
+                    type="range"
+                  />
+                  <div class="cyc-range-output">
+                    <span class="output outputOne">$</span>
+                    <span class="output outputTwo">$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cyc-widgets cyc-avail">
+              <h3>Availability</h3>
+              <ul>
+                <li>
+                  <a href="javascript:void(0);"
+                    >All Items (3141) <span class="cyc-catnum">(3141)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    >In Stock (2045) <span class="cyc-catnum">(2045)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="cyc-widgets cyc-color">
+              <h3>Color</h3>
+              <div class="cyc-color-flex">
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+              </div>
+            </div>
+            <div class="cyc-widgets cyc-size">
+              <h3>Size</h3>
+              <div class="ayc-size-sec">
+                <a href="javascript:void(0);">S</a>
+                <a href="javascript:void(0);">M</a>
+                <a href="javascript:void(0);">L</a>
+                <a href="javascript:void(0);">XL</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="cyc-shop-right-section">
+              <form>
+                <div class="cyc-top-view">
+                  <div class="cyc-grid-view">
+                    <a href="javascript:void(0);" class="grid-view active">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.5963 0H1.53657C0.689309 0 0 0.689309 0 1.53657V6.5963C0 7.44356 0.689309 8.13287 1.53657 8.13287H6.5963C7.44356 8.13287 8.13287 7.44356 8.13287 6.5963V1.53657C8.13287 0.689309 7.44356 0 6.5963 0ZM16.4634 0H11.4037C10.5564 0 9.86713 0.689309 9.86713 1.53657V6.5963C9.86713 7.44356 10.5564 8.13287 11.4037 8.13287H16.4634C17.3107 8.13287 18 7.44356 18 6.5963V1.53657C18 0.689309 17.3107 0 16.4634 0ZM6.5963 9.86713H1.53657C0.689309 9.86713 0 10.5564 0 11.4037V16.4634C0 17.3107 0.689309 18 1.53657 18H6.5963C7.44356 18 8.13287 17.3107 8.13287 16.4634V11.4037C8.13287 10.5564 7.44356 9.86713 6.5963 9.86713ZM16.4634 9.86713H11.4037C10.5564 9.86713 9.86713 10.5564 9.86713 11.4037V16.4634C9.86713 17.3107 10.5564 18 11.4037 18H16.4634C17.3107 18 18 17.3107 18 16.4634V11.4037C18 10.5564 17.3107 9.86713 16.4634 9.86713Z"
+                          fill="#EC6314"
+                        />
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0);" class="list-view">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.25 17.25H6.75C6.3 17.25 6 16.95 6 16.5V13.5C6 13.05 6.3 12.75 6.75 12.75H17.25C17.7 12.75 18 13.05 18 13.5V16.5C18 16.95 17.7 17.25 17.25 17.25ZM3.75 17.25H0.75C0.3 17.25 0 16.95 0 16.5V13.5C0 13.05 0.3 12.75 0.75 12.75H3.75C4.2 12.75 4.5 13.05 4.5 13.5V16.5C4.5 16.95 4.2 17.25 3.75 17.25ZM17.25 11.25H6.75C6.3 11.25 6 10.95 6 10.5V7.5C6 7.05 6.3 6.75 6.75 6.75H17.25C17.7 6.75 18 7.05 18 7.5V10.5C18 10.95 17.7 11.25 17.25 11.25ZM3.75 11.25H0.75C0.3 11.25 0 10.95 0 10.5V7.5C0 7.05 0.3 6.75 0.75 6.75H3.75C4.2 6.75 4.5 7.05 4.5 7.5V10.5C4.5 10.95 4.2 11.25 3.75 11.25ZM17.25 5.25H6.75C6.3 5.25 6 4.95 6 4.5V1.5C6 1.05 6.3 0.75 6.75 0.75H17.25C17.7 0.75 18 1.05 18 1.5V4.5C18 4.95 17.7 5.25 17.25 5.25ZM3.75 5.25H0.75C0.3 5.25 0 4.95 0 4.5V1.5C0 1.05 0.3 0.75 0.75 0.75H3.75C4.2 0.75 4.5 1.05 4.5 1.5V4.5C4.5 4.95 4.2 5.25 3.75 5.25Z"
+                          fill="#797979"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="cyc-sorting">
+                    <p>Showing 8 of 450 Total</p>
+                    <div class="cyc-form-input cyc-check-form">
+                      <select class="mySelect">
+                        <option value="0">Default Sorting</option>
+                        <option value="1">Ascending</option>
+                        <option value="2">Descending</option>
+                      </select>
+                      <div class="cyc-defsort-icon">
+                        <svg
+                          width="18"
+                          height="16"
+                          viewBox="0 0 18 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.0909 2.4C13.0909 1.92533 13.2349 1.46131 13.5046 1.06663C13.7743 0.671954 14.1576 0.36434 14.6061 0.18269C15.0546 0.00103989 15.5482 -0.0464881 16.0243 0.0461164C16.5004 0.138721 16.9378 0.367299 17.2811 0.702945C17.6244 1.03859 17.8581 1.46623 17.9528 1.93178C18.0475 2.39734 17.9989 2.8799 17.8132 3.31844C17.6274 3.75698 17.3128 4.13181 16.9091 4.39553C16.5055 4.65924 16.0309 4.8 15.5455 4.8C14.8945 4.8 14.2701 4.54714 13.8098 4.09706C13.3495 3.64697 13.0909 3.03652 13.0909 2.4ZM0.818182 3.2H10.6364C10.8534 3.2 11.0615 3.11571 11.2149 2.96569C11.3683 2.81566 11.4545 2.61217 11.4545 2.4C11.4545 2.18783 11.3683 1.98434 11.2149 1.83432C11.0615 1.68429 10.8534 1.6 10.6364 1.6H0.818182C0.601186 1.6 0.393079 1.68429 0.23964 1.83432C0.086201 1.98434 0 2.18783 0 2.4C0 2.61217 0.086201 2.81566 0.23964 2.96569C0.393079 3.11571 0.601186 3.2 0.818182 3.2ZM5.72727 5.6C5.22086 5.60139 4.72729 5.7559 4.31422 6.04235C3.90115 6.3288 3.5888 6.73316 3.42 7.2H0.818182C0.601186 7.2 0.393079 7.28428 0.23964 7.43431C0.086201 7.58434 0 7.78782 0 8C0 8.21217 0.086201 8.41565 0.23964 8.56568C0.393079 8.71571 0.601186 8.8 0.818182 8.8H3.42C3.5701 9.2151 3.83409 9.58183 4.18307 9.86006C4.53206 10.1383 4.9526 10.3173 5.39866 10.3775C5.84472 10.4376 6.29912 10.3767 6.71213 10.2013C7.12513 10.0258 7.48082 9.74272 7.74028 9.38287C7.99974 9.02303 8.15296 8.60033 8.18318 8.16104C8.21339 7.72175 8.11944 7.28279 7.9116 6.89222C7.70376 6.50164 7.39004 6.1745 7.00478 5.94658C6.61952 5.71866 6.17756 5.59876 5.72727 5.6ZM17.1818 7.2H10.6364C10.4194 7.2 10.2113 7.28428 10.0578 7.43431C9.90438 7.58434 9.81818 7.78782 9.81818 8C9.81818 8.21217 9.90438 8.41565 10.0578 8.56568C10.2113 8.71571 10.4194 8.8 10.6364 8.8H17.1818C17.3988 8.8 17.6069 8.71571 17.7604 8.56568C17.9138 8.41565 18 8.21217 18 8C18 7.78782 17.9138 7.58434 17.7604 7.43431C17.6069 7.28428 17.3988 7.2 17.1818 7.2ZM7.36364 12.8H0.818182C0.601186 12.8 0.393079 12.8843 0.23964 13.0343C0.086201 13.1843 0 13.3878 0 13.6C0 13.8122 0.086201 14.0157 0.23964 14.1657C0.393079 14.3157 0.601186 14.4 0.818182 14.4H7.36364C7.58063 14.4 7.78874 14.3157 7.94218 14.1657C8.09562 14.0157 8.18182 13.8122 8.18182 13.6C8.18182 13.3878 8.09562 13.1843 7.94218 13.0343C7.78874 12.8843 7.58063 12.8 7.36364 12.8ZM17.1818 12.8H14.58C14.387 12.2662 14.0072 11.8164 13.5078 11.5299C13.0084 11.2434 12.4214 11.1388 11.8508 11.2346C11.2801 11.3303 10.7624 11.6202 10.3892 12.0531C10.016 12.4859 9.81129 13.0338 9.81129 13.6C9.81129 14.1661 10.016 14.7141 10.3892 15.1469C10.7624 15.5798 11.2801 15.8697 11.8508 15.9654C12.4214 16.0612 13.0084 15.9566 13.5078 15.6701C14.0072 15.3836 14.387 14.9338 14.58 14.4H17.1818C17.3988 14.4 17.6069 14.3157 17.7604 14.1657C17.9138 14.0157 18 13.8122 18 13.6C18 13.3878 17.9138 13.1843 17.7604 13.0343C17.6069 12.8843 17.3988 12.8 17.1818 12.8Z"
+                            fill="#797979"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="cyc-gridview-content">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="cyc-grid-content">
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop1.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop2.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop3.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop4.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop5.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop6.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop7.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop8.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cyc-grid-box">
+                        <div class="cyc-grid-img">
+                          <img src="assets/images/shop9.png" alt="image" />
+                          <div class="cyc-grid-btn">
+                            <a href="cart.html" class="cyc-btn">
+                              <svg
+                                width="18"
+                                height="16"
+                                viewBox="0 0 18 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                                  stroke="#222222"
+                                  stroke-width="1.00714"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              Add to Cart</a
+                            >
+                          </div>
+                        </div>
+                        <div class="cyc-grid-text">
+                          <h3>
+                            <a href="shop-single.html">Cyclocross Bike</a>
+                          </h3>
+                          <div class="cyc-grid-price">
+                            <div class="cyc-grid-price-sec">
+                              <p>$80</p>
+                              <span>$60</span>
+                            </div>
+                            <div class="cyc-grid-star">
+                              <img
+                                src="assets/images/star-icon.png"
+                                alt="star"
+                              />
+                              <p>4.5(1.5K Reviews)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cyc-grid-pagination">
+                      <a href="javascript:void(0);" class="active">1</a>
+                      <a href="javascript:void(0);">2</a>
+                      <a href="javascript:void(0);">3</a>
+                      <a href="javascript:void(0);">
+                        <svg
+                          width="13"
+                          height="7"
+                          viewBox="0 0 13 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.9998 0.828447C13.0034 0.668147 12.9472 0.510886 12.839 0.378427C12.7309 0.245967 12.5761 0.144858 12.3961 0.0890904C12.2161 0.0333229 12.0198 0.0256544 11.8343 0.0671467C11.6489 0.108639 11.4834 0.19724 11.3609 0.32069L6.51764 5.04517L1.67433 0.317771C1.59894 0.231406 1.50293 0.159029 1.39236 0.105209C1.28178 0.0513877 1.15905 0.0172914 1.03191 0.00507139C0.904763 -0.00714863 0.775966 0.00277318 0.653644 0.0342104C0.531322 0.0656476 0.418131 0.117918 0.321216 0.187722C0.224299 0.257526 0.145762 0.343349 0.0905619 0.439774C0.0353613 0.536199 0.00469589 0.641133 0.000498772 0.747952C-0.0036974 0.854772 0.0186644 0.961158 0.0661783 1.0604C0.113691 1.15964 0.185325 1.24957 0.276553 1.32453L5.80827 6.72894C5.8952 6.81393 6.00317 6.88218 6.12472 6.92897C6.24628 6.97577 6.37854 7 6.5124 7C6.64625 7 6.77851 6.97577 6.90007 6.92897C7.02163 6.88218 7.12959 6.81393 7.21653 6.72894L12.7657 1.32453C12.9117 1.18758 12.9947 1.01176 12.9998 0.828447Z"
+                            fill="#857F7E"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Shop Section end ----------->
+    <!------------- copyright Section start ----------->
+    <div class="cyc-copyright-section">
+      <p>Copyright © 2025, Acrh Digital. All Rights Reserved.</p>
+    </div>
+    <!------------- copyright Section end ----------->
+    <!-- custom link  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      var rangeOne = document.querySelector('input[name="rangeOne"]'),
+        rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+        outputOne = document.querySelector(".outputOne"),
+        outputTwo = document.querySelector(".outputTwo"),
+        inclRange = document.querySelector(".incl-range"),
+        updateView = function () {
+          if (this.getAttribute("name") === "rangeOne") {
+            outputOne.innerHTML = `$${this.value}`;
+            outputOne.style.left =
+              (this.value / this.getAttribute("max")) * 100 + "%";
+          } else {
+            outputTwo.style.left =
+              (this.value / this.getAttribute("max")) * 100 + "%";
+            outputTwo.innerHTML = `$${this.value}`;
+          }
+          if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+            inclRange.style.width =
+              ((rangeOne.value - rangeTwo.value) / this.getAttribute("max")) *
+                100 +
+              "%";
+            inclRange.style.left =
+              (rangeTwo.value / this.getAttribute("max")) * 100 + "%";
+          } else {
+            inclRange.style.width =
+              ((rangeTwo.value - rangeOne.value) / this.getAttribute("max")) *
+                100 +
+              "%";
+            inclRange.style.left =
+              (rangeOne.value / this.getAttribute("max")) * 100 + "%";
+          }
+        };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        updateView.call(rangeOne);
+        updateView.call(rangeTwo);
+        $('input[type="range"]')
+          .on("mouseup", function () {
+            this.blur();
+          })
+          .on("mousedown input", function () {
+            updateView.call(this);
+          });
+      });
+    </script>
+  </body>
+</html>

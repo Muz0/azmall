@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="az">
+  <!-- Begin Head -->
+  <head>
+    <title>Azmall Az</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Bicycle Shop; Sizə uyğun məhsulu tapın; Onlayn alış-veriş mağazası; Tək şəxsiyyət vəsiqəsi ilə kredit"
+    />
+    <meta name="keywords" content="Azmall Az, Velosiped, Uşaq arabası, Yolka" />
+    <meta name="author" content="Muzaffar Mustafayev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-family  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <!------------- Loader start ----------->
+    <div class="cyc-loader">
+      <div class="cyc-spin">
+        <img src="assets/images/loader.gif" alt="loader" />
+      </div>
+    </div>
+    <!------------- Loader End ----------->
+    <!------------- Header Section start ----------->
+    <div class="cyc-menu-wrapper">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-4 col-sm-6 col-8">
+            <div class="cyc-menu-logo">
+              <a href="index.html"><img src="assets/images/Logo.png" /></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-6 col-4">
+            <div class="cyc-navmenu-wrapper">
+              <div class="cyc-navmenu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li class="cyc-has-menu">
+                    <a href="javascript:void(0)"
+                      >Pages
+                      <svg
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 491.996 491.996"
+                        style="enable-background: new 0 0 512 512"
+                      >
+                        <g>
+                          <path
+                            d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                            opacity="1"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                    <ul class="cyc-submenu">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                      <li class="active">
+                        <a href="shop-single.html">Shop Single</a>
+                      </li>
+                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="cyc-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="cyc-cart-icon">
+                <a href="javascript:void(0);">
+                  <span>
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="cyc-cart-details">
+                  <li class="cyc-cartdetail-sec">
+                    <div class="cyc-cartdetail-img">
+                      <a href="cart.html"
+                        ><img src="assets/images/single-pro1.png" alt="img"
+                      /></a>
+                    </div>
+                    <div class="cyc-cartdetail-text">
+                      <h3><a href="cart.html">Cyclocross Bike</a></h3>
+                      <p>$60</p>
+                    </div>
+                    <a href="javascript:void(0);" class="cart-close">×</a>
+                  </li>
+                  <li class="cyc-cartdetail-sec">
+                    <div class="cyc-cartdetail-img">
+                      <a href="cart.html"
+                        ><img src="assets/images/single-pro1.png" alt="img"
+                      /></a>
+                    </div>
+                    <div class="cyc-cartdetail-text">
+                      <h3><a href="cart.html">Cyclocross Bike</a></h3>
+                      <p>$60</p>
+                    </div>
+                    <a href="javascript:void(0);" class="cart-close">×</a>
+                  </li>
+                  <li>
+                    <div class="cyc-carttotal">
+                      <h4>Total <span>$120</span></h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cyc-cartbtn">
+                      <a href="cart.html" class="cyc-btn">View Cart</a>
+                      <a href="checkout.html" class="cyc-btn">Checkout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cyc-admin-icon">
+                <a href="profile.html">
+                  <span>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8033 9.36054C11.9864 8.572 11.0141 7.98824 9.95329 7.63487C11.0895 6.87945 11.8359 5.61519 11.8359 4.18563C11.8359 1.87768 9.89083 0 7.5 0C5.10917 0 3.16406 1.87768 3.16406 4.18563C3.16406 5.61519 3.91052 6.87945 5.04674 7.63487C3.9859 7.98824 3.01359 8.572 2.19671 9.36054C0.780147 10.728 0 12.5461 0 14.48H1.17188C1.17188 11.1116 4.01065 8.37126 7.5 8.37126C10.9893 8.37126 13.8281 11.1116 13.8281 14.48H15C15 12.5461 14.2199 10.728 12.8033 9.36054ZM7.5 7.24001C5.75534 7.24001 4.33594 5.86983 4.33594 4.18563C4.33594 2.50142 5.75534 1.13125 7.5 1.13125C9.24466 1.13125 10.6641 2.50142 10.6641 4.18563C10.6641 5.86983 9.24466 7.24001 7.5 7.24001Z"
+                        fill="#222222"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Header Section End ----------->
+    <!------------- Breadcrumb Section start ----------->
+    <div class="cyc-bread-section">
+      <div class="cyc-breadcrumb-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="cyc-bread-content">
+                <div class="cyc-bread-list">
+                  <span>
+                    <a href="index.html">Home</a>
+                  </span>
+                  <span>
+                    <a href="index.html">Shop</a>
+                  </span>
+                  <span class="cyc-active-page">Cyclocross Bike</span>
+                </div>
+                <h2>Cyclocross Bike</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Breadcrumb Section end ----------->
+    <!------------- Shop single Section Start ----------->
+    <div class="cyc-bgcover cyc-shopsing-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="cyc-shopsin-tabsec">
+              <div class="tab-content" id="myTabContent1">
+                <div
+                  class="tab-pane fade show active"
+                  id="pro1"
+                  role="tabpanel"
+                  aria-labelledby="pro1-tab"
+                >
+                  <img src="assets/images/shopsin-b1.png" alt="image" />
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pro2"
+                  role="tabpanel"
+                  aria-labelledby="pro2-tab"
+                >
+                  <img src="assets/images/shopsin-b1.png" alt="image" />
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pro3"
+                  role="tabpanel"
+                  aria-labelledby="pro3-tab"
+                >
+                  <img src="assets/images/shopsin-b1.png" alt="image" />
+                </div>
+              </div>
+              <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pro1-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#pro1"
+                    type="button"
+                    role="tab"
+                    aria-controls="pro1"
+                    aria-selected="true"
+                  >
+                    <img src="assets/images/shopsin-s1.png" alt="img" />
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pro2-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#pro2"
+                    type="button"
+                    role="tab"
+                    aria-controls="pro2"
+                    aria-selected="false"
+                  >
+                    <img src="assets/images/shopsin-s2.png" alt="img" />
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pro3-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#pro3"
+                    type="button"
+                    role="tab"
+                    aria-controls="pro3"
+                    aria-selected="false"
+                  >
+                    <img src="assets/images/shopsin-s3.png" alt="img" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12">
+            <div class="cyc-shopsingle-content">
+              <h3>Cyclocross Bike</h3>
+              <div class="cyc-grid-star">
+                <img src="assets/images/star-icon.png" alt="star" />
+                <p>4.5 (100 Customer Reviews)</p>
+              </div>
+              <div class="cyc-grid-price-sec">
+                <p>$80</p>
+                <span>$60</span>
+              </div>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks.
+              </p>
+              <div class="cyc-quantity-sec">
+                <h4>Quantity :</h4>
+                <div class="cyc-pro-quantity">
+                  <button class="shop-sub"><span>-</span></button>
+                  <input
+                    type="number"
+                    class="form-control"
+                    value="1"
+                    min="1"
+                    max="3"
+                  />
+                  <button class="shop-add"><span>+</span></button>
+                </div>
+              </div>
+              <div class="cyc-quantity-sec cyc-categories">
+                <h4>Categories :</h4>
+                <p>Bicycle</p>
+              </div>
+              <div class="cyc-quantity-sec cyc-share">
+                <h4>Share :</h4>
+                <ul>
+                  <li>
+                    <a href="javasript:void(0);">
+                      <svg
+                        width="10"
+                        height="18"
+                        viewBox="0 0 10 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.06741 18V9.78996H8.82208L9.23536 6.58941H6.06741V4.54632C6.06741 3.61998 6.32359 2.98869 7.65347 2.98869L9.34686 2.98799V0.125307C9.05401 0.0872508 8.04877 0 6.87877 0C4.43564 0 2.76302 1.49127 2.76302 4.22934V6.58941H0V9.78996H2.76302V18H6.06741Z"
+                          fill="#797979"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javasript:void(0);">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.4821 7.62177L17.0389 0H15.4852L9.79188 6.61788L5.24467 0H0L6.87627 10.0074L0 18H1.55384L7.5661 11.0113L12.3683 18H17.613L10.4817 7.62177H10.4821ZM8.3539 10.0956L7.65719 9.09906L2.11372 1.16971H4.50033L8.97398 7.56895L9.67069 8.56546L15.4859 16.8835H13.0993L8.3539 10.096V10.0956Z"
+                          fill="#797979"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javasript:void(0);">
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 19 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.9825 5.29207C17.9402 4.33563 17.7853 3.67815 17.5633 3.10836C17.3343 2.50359 16.9821 1.96214 16.5206 1.51202C16.0697 1.0549 15.5237 0.699678 14.9249 0.474704C14.3508 0.253175 13.6956 0.0984571 12.7375 0.0563315C11.7722 0.010549 11.4658 0 9.01765 0C6.5695 0 6.26307 0.010549 5.30139 0.0527449C4.3433 0.0949408 3.68462 0.249729 3.11401 0.471117C2.508 0.699678 1.9656 1.05131 1.51468 1.51202C1.05676 1.96211 0.701087 2.50714 0.47554 3.10492C0.253621 3.67815 0.0986658 4.33211 0.0564308 5.28848C0.0106028 6.25206 0 6.55795 0 9.00179C0 11.4456 0.0106028 11.7516 0.0528378 12.7115C0.095108 13.668 0.250169 14.3254 0.472123 14.8952C0.701087 15.5 1.05676 16.0414 1.51468 16.4916C1.9656 16.9487 2.51159 17.3039 3.11042 17.5289C3.68459 17.7504 4.33971 17.9051 5.29797 17.9473C6.25948 17.9896 6.56608 18 9.01423 18C11.4624 18 11.7688 17.9896 12.7305 17.9473C13.6886 17.9051 14.3473 17.7504 14.9179 17.5289C15.5172 17.2976 16.0614 16.9438 16.5158 16.4903C16.9702 16.0368 17.3246 15.4935 17.5563 14.8952C17.7781 14.322 17.9332 13.6679 17.9754 12.7115C18.0177 11.7516 18.0283 11.4456 18.0283 9.00179C18.0283 6.55795 18.0247 6.25203 17.9825 5.29207ZM16.3587 12.6412C16.3199 13.5203 16.172 13.995 16.0487 14.3114C15.7457 15.0956 15.1222 15.718 14.3367 16.0204C14.0196 16.1435 13.5407 16.2912 12.6635 16.3297C11.7124 16.3721 11.4272 16.3825 9.02124 16.3825C6.61532 16.3825 6.32651 16.3721 5.37885 16.3297C4.49822 16.2912 4.02268 16.1435 3.70565 16.0204C3.31476 15.8762 2.95895 15.6476 2.6701 15.3488C2.37069 15.0569 2.14173 14.7053 1.99723 14.315C1.87394 13.9986 1.72603 13.5203 1.68739 12.6448C1.64498 11.6954 1.63455 11.4105 1.63455 9.00879C1.63455 6.60711 1.64498 6.3188 1.68739 5.37298C1.72603 4.4939 1.87394 4.0192 1.99723 3.70273C2.14173 3.31234 2.37069 2.95723 2.6737 2.66882C2.96593 2.36993 3.31818 2.14137 3.70925 1.99731C4.02627 1.87424 4.50541 1.72655 5.38244 1.68784C6.33352 1.64564 6.61892 1.63509 9.02466 1.63509C11.4342 1.63509 11.7194 1.64564 12.667 1.68784C13.5477 1.72659 14.0232 1.8742 14.3402 1.99727C14.7311 2.14137 15.087 2.36993 15.3758 2.66882C15.6752 2.96071 15.9042 3.31234 16.0487 3.70273C16.172 4.0192 16.3199 4.49731 16.3586 5.37298C16.4009 6.32239 16.4115 6.60711 16.4115 9.00879C16.4115 11.4105 16.401 11.6918 16.3587 12.6412Z"
+                          fill="#797979"
+                        />
+                        <path
+                          d="M9.01785 4.37783C6.46058 4.37783 4.38574 6.44888 4.38574 9.0018C4.38574 11.5547 6.46058 13.6258 9.01785 13.6258C11.5752 13.6258 13.65 11.5547 13.65 9.0018C13.65 6.44888 11.5752 4.37783 9.01785 4.37783ZM9.01785 12.0012C7.35882 12.0012 6.01308 10.6581 6.01308 9.0018C6.01308 7.34554 7.35882 6.00237 9.01782 6.00237C10.677 6.00237 12.0226 7.34554 12.0226 9.0018C12.0226 10.6581 10.677 12.0012 9.01785 12.0012ZM14.9146 4.19498C14.9146 4.79114 14.4304 5.27449 13.8331 5.27449C13.2359 5.27449 12.7517 4.79114 12.7517 4.19498C12.7517 3.59875 13.2359 3.11554 13.8331 3.11554C14.4304 3.11554 14.9146 3.59872 14.9146 4.19498Z"
+                          fill="#797979"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javasript:void(0);">
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.55697 0C2.62362 0 0 3.16139 0 6.60855C0 8.20725 0.89329 10.2008 2.32323 10.8331C2.54036 10.931 2.6585 10.8894 2.70687 10.688C2.74962 10.535 2.93751 9.79807 3.02864 9.45043C3.05676 9.33905 3.04214 9.24229 2.95213 9.13766C2.47736 8.58864 2.10047 7.58847 2.10047 6.65018C2.10047 4.24594 4.01193 1.91146 7.26445 1.91146C10.0771 1.91146 12.0448 3.73854 12.0448 6.35204C12.0448 9.3053 10.4821 11.3484 8.45138 11.3484C7.32746 11.3484 6.49042 10.4663 6.75593 9.37505C7.07657 8.07562 7.70547 6.6783 7.70547 5.74114C7.70547 4.90072 7.2307 4.20544 6.26091 4.20544C5.11673 4.20544 4.18856 5.33837 4.18856 6.85944C4.18856 7.82586 4.53058 8.47838 4.53058 8.47838C4.53058 8.47838 3.39878 13.0506 3.18839 13.9045C2.83288 15.3502 3.23677 17.6914 3.27165 17.8928C3.29302 18.0042 3.4179 18.0391 3.48766 17.9479C3.59904 17.8017 4.9671 15.8497 5.35074 14.4389C5.49025 13.9248 6.0629 11.84 6.0629 11.84C6.43979 12.5207 7.52772 13.0911 8.68652 13.0911C12.1337 13.0911 14.6245 10.0613 14.6245 6.30141C14.6122 2.69675 11.5273 0 7.55697 0Z"
+                          fill="#797979"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cyc-shop-sinbtn">
+                <a href="cart.html" class="cyc-btn">Add to Cart</a>
+                <a href="cart.html" class="cyc-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="cyc-shopsin-tablist">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    Description
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="nav-profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                    tabindex="-1"
+                  >
+                    Reviews
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                  tabindex="0"
+                >
+                  <div class="cyc-product-desc">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum. There are
+                      many variations of passages of Lorem Ipsum available, but
+                      the majority have suffered alteration in some form, by
+                      injected humour, or randomised words which don't look even
+                      slightly believable. If you are going to use a passage of
+                      Lorem Ipsum, you need to be sure there isn't anything
+                      embarrassing hidden in the middle of text. All the Lorem
+                      Ipsum generators on the Internet tend to repeat predefined
+                      chunks.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="cyc-post-div cyc-shop-post">
+                    <div class="review-author">
+                      <img
+                        src="assets/images/admin.jpg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="cyc-blog-post-para">
+                      <h3>Marion Alvarado <span>(12.04.24)</span></h3>
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo.
+                      </p>
+                    </div>
+                    <div class="cyc-shop-review">
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                    </div>
+                  </div>
+                  <div class="cyc-post-div cyc-shop-post">
+                    <div class="review-author">
+                      <img
+                        src="assets/images/comment-author-1.jpg"
+                        alt=""
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="cyc-blog-post-para">
+                      <h3>Steffi Smith <span>(23.04.24)</span></h3>
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo.
+                      </p>
+                    </div>
+                    <div class="cyc-shop-review">
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                      <img src="assets/images/star-icon.png" alt="star" />
+                    </div>
+                  </div>
+                  <div class="cyc-comments-form cyc-shopsin-form">
+                    <h3>Add A Review</h3>
+                    <div class="cyc-shopsin-formrate">
+                      <p>Rate This Product</p>
+                      <img src="assets/images/star-gray.svg" alt="star" />
+                      <img src="assets/images/star-gray.svg" alt="star" />
+                      <img src="assets/images/star-gray.svg" alt="star" />
+                      <img src="assets/images/star-gray.svg" alt="star" />
+                      <img src="assets/images/star-gray.svg" alt="star" />
+                    </div>
+                    <form method="" class="cyc-leave-form">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <div class="cyc-form-input">
+                            <input
+                              type="text"
+                              class="form-control require"
+                              placeholder="Enter Your Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <div class="cyc-form-input">
+                            <input
+                              type="text"
+                              class="form-control require"
+                              name="email"
+                              placeholder="Enter Your Email"
+                              data-valid="email"
+                              data-error="Email should be valid."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                          <div class="cyc-form-input">
+                            <textarea
+                              name="your-message"
+                              cols="3"
+                              rows="8"
+                              class="form-control form-textarea require"
+                              placeholder="Enter Your Message..."
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                          <button
+                            type="button"
+                            class="cyc-btn cyc-con-btn submitForm"
+                          >
+                            Post Review
+                          </button>
+                          <div class="response"></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- About Section end ----------->
+    <!------------- Trending Product Section Start ----------->
+    <div class="cyc-bgcover cyc-trending-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="cyc-heading-sec">
+              <h3>Trending Products</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-grid-box cyc-pro-sec">
+              <div class="cyc-grid-img">
+                <img src="assets/images/shop4.png" alt="image" />
+                <div class="cyc-grid-btn">
+                  <a href="cart.html" class="cyc-btn">
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Add to Cart</a
+                  >
+                </div>
+              </div>
+              <div class="cyc-grid-text">
+                <h3><a href="shop-single.html">Cyclocross Bike</a></h3>
+                <div class="cyc-grid-price">
+                  <div class="cyc-grid-price-sec">
+                    <p>$80</p>
+                    <span>$60</span>
+                  </div>
+                  <div class="cyc-grid-star">
+                    <img src="assets/images/star-icon.png" alt="star" />
+                    <p>4.5(1.5K Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-grid-box cyc-pro-sec">
+              <div class="cyc-grid-img">
+                <img src="assets/images/shop3.png" alt="image" />
+                <div class="cyc-grid-btn">
+                  <a href="cart.html" class="cyc-btn">
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Add to Cart</a
+                  >
+                </div>
+              </div>
+              <div class="cyc-grid-text">
+                <h3><a href="shop-single.html">Cyclocross Bike</a></h3>
+                <div class="cyc-grid-price">
+                  <div class="cyc-grid-price-sec">
+                    <p>$80</p>
+                    <span>$60</span>
+                  </div>
+                  <div class="cyc-grid-star">
+                    <img src="assets/images/star-icon.png" alt="star" />
+                    <p>4.5(1.5K Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-grid-box cyc-pro-sec">
+              <div class="cyc-grid-img">
+                <img src="assets/images/shop1.png" alt="image" />
+                <div class="cyc-grid-btn">
+                  <a href="cart.html" class="cyc-btn">
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Add to Cart</a
+                  >
+                </div>
+              </div>
+              <div class="cyc-grid-text">
+                <h3><a href="shop-single.html">Cyclocross Bike</a></h3>
+                <div class="cyc-grid-price">
+                  <div class="cyc-grid-price-sec">
+                    <p>$80</p>
+                    <span>$60</span>
+                  </div>
+                  <div class="cyc-grid-star">
+                    <img src="assets/images/star-icon.png" alt="star" />
+                    <p>4.5(1.5K Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-grid-box cyc-pro-sec">
+              <div class="cyc-grid-img">
+                <img src="assets/images/shop4.png" alt="image" />
+                <div class="cyc-grid-btn">
+                  <a href="cart.html" class="cyc-btn">
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Add to Cart</a
+                  >
+                </div>
+              </div>
+              <div class="cyc-grid-text">
+                <h3><a href="shop-single.html">Cyclocross Bike</a></h3>
+                <div class="cyc-grid-price">
+                  <div class="cyc-grid-price-sec">
+                    <p>$80</p>
+                    <span>$60</span>
+                  </div>
+                  <div class="cyc-grid-star">
+                    <img src="assets/images/star-icon.png" alt="star" />
+                    <p>4.5(1.5K Reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Trending Product Section Start ----------->
+    <!------------- copyright Section start ----------->
+    <div class="cyc-copyright-section">
+      <p>Copyright © 2025, Acrh Digital. All Rights Reserved.</p>
+    </div>
+    <!------------- copyright Section end ----------->
+    <!-- custom link  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="az">
+  <!-- Begin Head -->
+  <head>
+    <title>Azmall Az</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Bicycle Shop; Sizə uyğun məhsulu tapın; Onlayn alış-veriş mağazası; Tək şəxsiyyət vəsiqəsi ilə kredit"
+    />
+    <meta name="keywords" content="Azmall Az, Velosiped, Uşaq arabası, Yolka" />
+    <meta name="author" content="Muzaffar Mustafayev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-family  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <!------------- Loader start ----------->
+    <div class="cyc-loader">
+      <div class="cyc-spin">
+        <img src="assets/images/loader.gif" alt="loader" />
+      </div>
+    </div>
+    <!------------- Loader End ----------->
+    <!------------- Header Section start ----------->
+    <div class="cyc-menu-wrapper">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-4 col-sm-6 col-8">
+            <div class="cyc-menu-logo">
+              <a href="index.html"><img src="assets/images/Logo.png" /></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-6 col-4">
+            <div class="cyc-navmenu-wrapper">
+              <div class="cyc-navmenu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li class="cyc-has-menu">
+                    <a href="javascript:void(0)"
+                      >Pages
+                      <svg
+                        version="1.1"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 491.996 491.996"
+                        style="enable-background: new 0 0 512 512"
+                      >
+                        <g>
+                          <path
+                            d="m484.132 124.986-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86-7.208 0-13.964 2.792-19.036 7.86l-183.84 183.848L62.056 108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968 2.788-19.036 7.856l-16.12 16.128c-10.496 10.488-10.496 27.572 0 38.06l219.136 219.924c5.064 5.064 11.812 8.632 19.084 8.632h.084c7.212 0 13.96-3.572 19.024-8.632l218.932-219.328c5.072-5.064 7.856-12.016 7.864-19.224 0-7.212-2.792-14.068-7.864-19.128z"
+                            opacity="1"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                    <ul class="cyc-submenu">
+                      <li class="active"><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                      <li><a href="shop-single.html">Shop Single</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="cyc-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="cyc-cart-icon">
+                <a href="javascript:void(0);">
+                  <span>
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02066 3.48001H17L15.0083 10.48H6.01235M6.01235 10.48L5.73822 11.0328C5.4071 11.6978 5.8886 12.48 6.62901 12.48H15.0083M6.01235 10.48L3.45177 1.48001H1M8.99994 14.48C8.99994 14.6778 8.94154 14.8711 8.83211 15.0356C8.72269 15.2 8.56716 15.3282 8.38519 15.4039C8.20323 15.4796 8.00299 15.4994 7.80982 15.4608C7.61664 15.4222 7.4392 15.327 7.29993 15.1871C7.16066 15.0473 7.06581 14.8691 7.02739 14.6751C6.98896 14.4811 7.00868 14.2801 7.08406 14.0973C7.15943 13.9146 7.28707 13.7584 7.45084 13.6485C7.6146 13.5387 7.80714 13.48 8.0041 13.48C8.26821 13.48 8.52151 13.5854 8.70827 13.7729C8.89502 13.9604 8.99994 14.2148 8.99994 14.48ZM14.0125 14.48C14.0125 14.6778 13.9541 14.8711 13.8447 15.0356C13.7353 15.2 13.5797 15.3282 13.3978 15.4039C13.2158 15.4796 13.0156 15.4994 12.8224 15.4608C12.6292 15.4222 12.4518 15.327 12.3125 15.1871C12.1732 15.0473 12.0784 14.8691 12.04 14.6751C12.0016 14.4811 12.0213 14.2801 12.0966 14.0973C12.172 13.9146 12.2997 13.7584 12.4634 13.6485C12.6272 13.5387 12.8197 13.48 13.0167 13.48C13.2808 13.48 13.5341 13.5854 13.7209 13.7729C13.9076 13.9604 14.0125 14.2148 14.0125 14.48Z"
+                        stroke="#222222"
+                        stroke-width="1.00714"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="cyc-cart-details">
+                  <li class="cyc-cartdetail-sec">
+                    <div class="cyc-cartdetail-img">
+                      <a href="cart.html"
+                        ><img src="assets/images/single-pro1.png" alt="img"
+                      /></a>
+                    </div>
+                    <div class="cyc-cartdetail-text">
+                      <h3><a href="cart.html">Cyclocross Bike</a></h3>
+                      <p>$60</p>
+                    </div>
+                    <a href="javascript:void(0);" class="cart-close">×</a>
+                  </li>
+                  <li class="cyc-cartdetail-sec">
+                    <div class="cyc-cartdetail-img">
+                      <a href="cart.html"
+                        ><img src="assets/images/single-pro1.png" alt="img"
+                      /></a>
+                    </div>
+                    <div class="cyc-cartdetail-text">
+                      <h3><a href="cart.html">Cyclocross Bike</a></h3>
+                      <p>$60</p>
+                    </div>
+                    <a href="javascript:void(0);" class="cart-close">×</a>
+                  </li>
+                  <li>
+                    <div class="cyc-carttotal">
+                      <h4>Total <span>$120</span></h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cyc-cartbtn">
+                      <a href="cart.html" class="cyc-btn">View Cart</a>
+                      <a href="checkout.html" class="cyc-btn">Checkout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cyc-admin-icon">
+                <a href="profile.html">
+                  <span>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.8033 9.36054C11.9864 8.572 11.0141 7.98824 9.95329 7.63487C11.0895 6.87945 11.8359 5.61519 11.8359 4.18563C11.8359 1.87768 9.89083 0 7.5 0C5.10917 0 3.16406 1.87768 3.16406 4.18563C3.16406 5.61519 3.91052 6.87945 5.04674 7.63487C3.9859 7.98824 3.01359 8.572 2.19671 9.36054C0.780147 10.728 0 12.5461 0 14.48H1.17188C1.17188 11.1116 4.01065 8.37126 7.5 8.37126C10.9893 8.37126 13.8281 11.1116 13.8281 14.48H15C15 12.5461 14.2199 10.728 12.8033 9.36054ZM7.5 7.24001C5.75534 7.24001 4.33594 5.86983 4.33594 4.18563C4.33594 2.50142 5.75534 1.13125 7.5 1.13125C9.24466 1.13125 10.6641 2.50142 10.6641 4.18563C10.6641 5.86983 9.24466 7.24001 7.5 7.24001Z"
+                        fill="#222222"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Header Section End ----------->
+    <!------------- Breadcrumb Section start ----------->
+    <div class="cyc-bread-section">
+      <div class="cyc-breadcrumb-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="cyc-bread-content">
+                <div class="cyc-bread-list">
+                  <span>
+                    <a href="index.html">Home</a>
+                  </span>
+                  <span class="cyc-active-page">Blog</span>
+                </div>
+                <h2>Blog</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Breadcrumb Section end ----------->
+    <!------------- Blog Section Start ----------->
+    <div class="cyc-bgcover cyc-blog-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-1.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-2.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-3.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-4.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-5.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-6.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-7.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cyc-blog-sec">
+              <div class="cyc-blog-img">
+                <img src="assets/images/blog-8.png" alt="blog-img" />
+              </div>
+              <div class="cyc-blog-text">
+                <div class="cyc-admin-box">
+                  <ul>
+                    <li>By <span>Jone Lee</span></li>
+                    <li>
+                      <span class="cyc-date">Sep 13, 2024</span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <a href="blog-single.html">Selecting The Proper Bicycle</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur there lorem ipsum..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------- Blog Section end ----------->
+    <!------------- copyright Section start ----------->
+    <div class="cyc-copyright-section">
+      <p>Copyright © 2025, Acrh Digital. All Rights Reserved.</p>
+    </div>
+    <!------------- copyright Section end ----------->
+    <!-- custom link  -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
